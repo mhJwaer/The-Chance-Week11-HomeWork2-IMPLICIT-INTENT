@@ -1,6 +1,5 @@
 package com.example.thechanceweek11homework2.ui
 
-import android.content.Intent
 import android.view.LayoutInflater
 import com.example.thechanceweek11homework2.databinding.ActivitySecondBinding
 import com.example.thechanceweek11homework2.util.Constants
@@ -11,6 +10,7 @@ class SecondActivity : BaseActivity<ActivitySecondBinding>() {
 
     override fun setup() {
         val extraText: String = intent.getStringExtra(Constants.EXTRA_TEXT).toString()
+        log(extraText)
         binding?.textView?.text = extraText
     }
 

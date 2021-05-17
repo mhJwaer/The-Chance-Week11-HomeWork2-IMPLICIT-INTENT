@@ -18,7 +18,7 @@ class FirstActivity : BaseActivity<ActivityFirstBinding>() {
         binding?.button?.setOnClickListener {
             val intent = Intent().apply {
                 action = Intent.ACTION_SEND
-                putExtra(Constants.EXTRA_TEXT, binding?.editText?.text.toString())
+                putExtra(Constants.EXTRA_TEXT, "This Text From First Activity")
                 type="text/plain"
             }
             val shareIntent = Intent.createChooser(intent, null)
